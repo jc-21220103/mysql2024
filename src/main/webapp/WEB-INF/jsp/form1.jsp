@@ -14,7 +14,9 @@
 %>
 
 <body>
-<SELECT NAME="ITEM_ON">
+<FORM METHOD="GET" ACTION="./result1">
+
+<SELECT NAME="ID">
 
 <% for (String[] ss : result){ %>
          <OPTION VALUE="<%= ss[1] %>">
@@ -22,6 +24,8 @@
          </OPTION>
 <%} %>
 
-</SELECT>>
+</SELECT>
+<INPUT TYPE="SUBMIT" VALUE="絞り込む"/>
+</FORM>
 </body>
 </html>

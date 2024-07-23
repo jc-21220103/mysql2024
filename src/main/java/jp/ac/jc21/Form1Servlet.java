@@ -54,7 +54,7 @@ public class Form1Servlet extends HttpServlet {
 			
 			request.setAttribute("result", result);
 			RequestDispatcher rd =
-					request.getRequestDispatcher("/WEB-TNF/jsp/form1.jsp");
+					request.getRequestDispatcher("/WEB-INF/jsp/form1.jsp");
 			rd.forward(request, response);
 		} catch (SQLException e) {
 			e.printStackTrace();
